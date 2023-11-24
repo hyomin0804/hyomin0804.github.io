@@ -1,0 +1,63 @@
+# 2870_ 수학숙제
+
+##### 난이도 🔴🔴
+
+- 이거는 결과 숫자를 int나 long long으로 나타내지 못함
+- int 는 10^9, longlong은 10^18승인데 100개의 문자열을 나타내려면 10^100이여야함
+- 따라서 문자열로 정렬하고 결과 값을 내야 함
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+int n;
+string s, ss="";
+vector<string> v;
+
+// 문자열 숫자 크기 비교  
+bool cmp(string a, string b){
+	if(a.size() == b.size()) return a<b;
+	return a.size() <b.size();
+}
+
+void go (){
+	while (true){
+		if(ss.size() && ss.front()=='0') ss.erase(ss.begin());
+		else break;
+		
+	}
+	if(ss.size()==0) ss="0";
+	v.push_back(ss);
+	ss=""; // ss 초기화  
+	return;
+}
+
+int main(){
+	cin >> n;
+	for(int i=0; i<n; i++){
+		cin >> s;
+		ss="";
+
+		for(int a=0; a<s.size(); a++){
+			// 숫자라면  
+			if(isdigit(s[a])) ss+=s[a];
+				
+			else{ // 문자라면  
+				if(ss.size()){
+					//지금까지 만든 숫자열  
+					go();
+				}
+				
+			}
+					
+		}
+		if(ss.size()) go();
+	}
+	
+	sort(v.begin(), v.end(),cmp);
+	for(string i: v){
+		cout << i << "\\n";
+	} 
+	
+	return 0;
+}
+```
