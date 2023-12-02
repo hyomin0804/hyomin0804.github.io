@@ -19,8 +19,8 @@ locale                   : "ko-KR"
 title                    : "Hyomin Note"
 title_separator          : "|"
 subtitle                 : "small positive action"
-name                     : "Hyomin LEE"
-description              : "To become a AI Engineer"
+name                     : "Hyomin Lee"
+description              : ""
 url                      : "https://hyomin0804.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -106,13 +106,13 @@ analytics:
 author:
   name             : "Hyomin Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Only I can change my life.\n no one cand do it for me"
   location         : "South Korea"
   email            : "jamie5597@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:jamie5597@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -124,7 +124,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/hyomin0804"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -292,3 +292,4 @@ defaults:
       share: true
       related: true
       show_date: true
+      sidebar_main: true
