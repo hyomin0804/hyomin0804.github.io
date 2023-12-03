@@ -7,5 +7,5 @@ sidebar_main: true
 ---
 
 
-{% assign posts = site.categories.6_week_Binary_Search&LIS %}
-{% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
+{% assign posts = site.categories.['6_week_Binary_Search&LIS'] %}
+{% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
