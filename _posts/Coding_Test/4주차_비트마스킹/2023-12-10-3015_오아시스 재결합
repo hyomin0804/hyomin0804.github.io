@@ -1,0 +1,81 @@
+---
+layout : single
+categories: 4_week_Bit_Masking
+sidebar_main: true
+---
+
+
+
+##### 난이도 🔴🔴🔴🔴
+
+```cpp
+// 정답 코드
+#include <iostream>
+#include <stack>
+using namespace std;
+typedef long long ll;
+ll n,a,ret;
+stack<pair<ll,ll>> stk;
+
+int main(){
+	cin >> n;
+	
+	for(int i=0; i<n; i++){
+		int cnt=1;
+		cin >> a;
+		while(stk.size() && stk.top().first<=a){ // 오름차순  ,내림차순 하다가 갑자기 큰 수
+			ret+=stk.top().second; 
+			if(stk.top().first==a){
+				cnt=stk.top().second +1;
+			}else{
+				cnt=1;
+			}
+			
+			stk.pop();
+			
+		}
+		if(stk.size()) ret++; // 내림차순
+		stk.push({a,cnt});
+	
+		
+	}
+	cout << ret << "\\n"; 
+	return 0;
+}
+```
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/691679ea-4192-408b-9c2f-4dd7e2a7608d/f4f98ed1-4f34-4411-8a87-a8faae70126a/Untitled.png)
+
+```cpp
+//내가 푼 코드->시간 초과 (시간 복잡도 50만*50만)
+#include <iostream>
+#include <vector>
+using namespace std;
+int n,a,ret;
+vector<int> v;
+
+bool check(int y, int x, int tall){
+	for(int i=y+1; i<x; i++){
+		if(v[i] > tall) return 0;
+	}
+	return 1;
+}
+
+int main(){
+	cin >> n;
+	for(int i=0; i<n; i++){
+		cin >> a;
+		v.push_back(a);	
+	}
+	for(int i=0; i<n; i++){
+		for(int j=i+1; j<n; j++){
+			int tall=min(v[i], v[j]) ;
+			if(check(i,j,tall)){
+				ret++;
+			}
+		}
+	}
+	cout << ret;
+	return 0;
+}
+```
