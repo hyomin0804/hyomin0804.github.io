@@ -1,5 +1,5 @@
 ---
-title: "자료구조&알고리즘2"
+title: "자료구조&알고리즘"
 layout: archive
 permalink: categories/Data_Structure
 author_profile: true
