@@ -8,23 +8,23 @@ tags: Linear_data_structure
 # 선형자료 구조
 
 <aside> 
+
 💡 : **선형 자료 구조**(Linear data structure)은 연속적으로 데이터가 나열되는/ 요소가 일렬로 나열되어있는 자료구조 입니다.
 
 **대표적인 선형 자료 구조 :** array, dynamic-array, list, linked-list, vector, stack, queue, hash table
-</aside>
 
-
+</aside> 
 
 [TOC]
 
 ## 1. Array
 
-: Data를 메모리 상에 ==미리 할당된 크기==만큼 ==연속적이며 순차적==으로 데이터를 저장하는 자료구조
+: Data를 메모리 상에 ==미리 할당된 크기만큼 연속적이며 순차적으로 데이터를 저장하는 자료구조
 
 - **특징**
 
-  - 고정된 저장 공간(fixed-size)으로 ==컴파일(Compile) 단계==에서 메모리를 할당하는 정적(Static) 자료구조 → Stack 영역 할당됨
-  - 데이터의 연속성을 유지하기 위해 <mark>순차적인<mark/> 데이터 저장(order)→ 연속된 메모리 공간에 데이터 저장
+  - 고정된 저장 공간(fixed-size)으로 컴파일(Compile) 단계에서 메모리를 할당하는 정적(Static) 자료구조 → Stack 영역 할당됨
+  - 데이터의 연속성을 유지하기 위해 순차적인 데이터 저장(order)→ 연속된 메모리 공간에 데이터 저장
   - 데이터 각각은 연속적으로 되어 있어 각각 순차적인 인덱스를 가짐
 
 - **장점**
