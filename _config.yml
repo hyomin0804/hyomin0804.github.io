@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "contrast" # "default", "air", "aqua", "contrast", "d
 locale                   : "ko-KR"
 title                    : "Hyomin Note"
 title_separator          : "|"
-subtitle                 : "small positive action"
+subtitle                 : "임베디드 SW 개발자"
 name                     : "Hyomin Lee"
 description              : ""
 url                      : "https://hyomin0804.github.io"
@@ -106,7 +106,7 @@ analytics:
 author:
   name             : "Hyomin Lee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Only I can change my life.\n no one cand do it for me"
+  bio              : "Only I can change my life.\n no one can do it for me"
   location         : "South Korea"
   email            : "jamie5597@gmail.com"
   links:
