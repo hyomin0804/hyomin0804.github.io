@@ -101,7 +101,7 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "Data_Structure" %}
-                        <li><a href="/categories/Data_Structure" class="">자료구조&알고리즘 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Data_Structure" class="">자료구조&알고리즘2({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
           </ul>
